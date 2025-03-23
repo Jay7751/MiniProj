@@ -1,0 +1,12 @@
+{
+    "name": "stock-app",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "concurrently \"cd backend && python app.py\" \"cd frontend && npm start\"",
+      "build": "cd frontend && npm run build",
+      "install": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install"
+    },
+    "dependencies": {
+      "concurrently": "^8.2.1"
+    }
+  }
